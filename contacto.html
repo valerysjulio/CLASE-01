@@ -1,101 +1,44 @@
 <!DOCTYPE html>
-<html lang="en">
-
+<html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>fromulario de contacto</title>
-    <style>
-        body {
-            font-family: arial, sans-serif;
-            margin: 0;
-            padding: 0;
-            background: linear-gradient(135deg, #f1e7ef, #ec4cd4);
-            color: #333;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            height: 100vh;
-        }
-        .form-container {
-              background:   #ff71c4;
-              padding: 20px;
-              border-radius: 10px;
-              box-shadow: 0 4px 6px rgba(112, 42, 91, 0);
-              max-width: 400px;
-              width: 100%;
-        }
-        .form-container h1 {
-            text-align: center;
-            margin-bottom: 20px;
-            font-size: 1.5rem;
-            color: #0c0000; 
-        }
-        .form-group {
-            margin-bottom: 15px;
-        }
-        .form-group label {
-            display: block;
-            margin-bottom: 5px;
-            font-weight: bold;
-            color: #000000;
-        }
-        .form-group input {
-            width: 100%;
-            padding: 5px;
-            border: 1px solid #ec4cd4;
-            border-radius: 5px;
-            outline: none;
-            transition: border-color 0.3s;
-        }
-        .form-group input:focus {
-            border-color: #ee5acb;
-        }
-        .form-group button {
-            width: 100%;
-            padding: 10px;
-            border: none;
-            border-radius: 5px;
-            background: #ec4cd4;
-            color: #ec4cd4;
-            font-size: 1rem;
-            cursor: pointer;
-            transition: background-color 0.3;
-        }
-        .form-group button:hover {
-            background: #f83cdc;
-        }
-        .form-group small {
-            display: block;
-            margin-top: 10px;
-            font-size: 0.875rem;
-            color: #e27dcb;
-        }
-    </style>
+    <title>Contacto - Mascotas</title>
+    <link rel="stylesheet" href="styles.css">
+    <script defer src="scripts.js"></script>
 </head>
 <body>
-    <div class="form-container">
-        <h1>formulario de contacto</h1>
-        <form action="">
-            <div class="form-group">
-                <label for="nombre">nombre</label>
-                <input type="text" id="nombre" name="nombre" placeholder="ingrese su nombre">
-            </div>
-            <div class="form-group">
-                <label for="correo">correo electronico</label>
-                <input type="text" id="correo" name="correo" placeholder="ingrese su correo electronico">
-            </div>
-            <div class="form-group">
-                <label for="mensaje">mensaje</label>
-                <input type="email" id="mensaje" name="mensaje" placeholder="escriba su mensaje aqui">
-            </div>
+    <header>
+        <div class="container">
+            <h1>Tienda de Mascotas</h1>
+            <nav>
+                <a href="index.html">Inicio</a>
+                <a href="galeria.html">Galería</a>
+                <a href="contacto.html">Contacto</a>
+            </nav>
+        </div>
+    </header>
 
-            <div>
-                <button type="submit">enviar</button>
-            </div>
-            <small>su informacion es confidencial</small>
-        </form>
-    </div>
+    <main class="contact-main">
+        <section class="form-section">
+            <h2>Contáctanos</h2>
+            <form id="contactForm">
+                <label for="name">Nombre:</label>
+                <input type="text" id="name" name="name" placeholder="Ingresa tu nombre">
+                
+                <label for="reason">Motivo de Contacto:</label>
+                <input type="text" id="reason" name="reason" placeholder="Adopción, consultas, etc.">
+                
+                <label for="email">Correo Electrónico:</label>
+                <input type="email" id="email" name="email" placeholder="ejemplo@correo.com">
+                
+                <button type="submit" class="button">Enviar</button>
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Tienda de Mascotas. Todos los derechos reservados.</p>
+    </footer>
 </body>
-
 </html>
